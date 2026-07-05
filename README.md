@@ -2,9 +2,9 @@
 
 ## Project Overview
 
-This project aims to predict whether a loan application will be approved using a Support Vector Machine (SVM) classification model.
+This project aims to predict whether a loan application will be approved using a Support Vector Machine (SVM).
 
-The dataset contains information such as applicant income, loan amount, education, marital status, credit history, and property area. Data preprocessing has been completed, and the dataset is now ready for model training.
+The project is currently in the data preprocessing stage. The dataset has been loaded, explored, cleaned, and prepared for model training.
 
 ---
 
@@ -12,7 +12,7 @@ The dataset contains information such as applicant income, loan amount, educatio
 
 - Dataset: Loan Approval Prediction
 - Total Records: 614
-- Features: 13
+- Total Features: 13
 - Target Variable: Loan_Status
 
 ---
@@ -31,11 +31,11 @@ The dataset contains information such as applicant income, loan amount, educatio
 
 ### 1. Imported Required Libraries
 
-Imported all required Python libraries for data analysis and machine learning.
+Imported all the required Python libraries for data analysis and machine learning.
 
 ### 2. Loaded the Dataset
 
-Loaded the CSV dataset using Pandas.
+Loaded the Loan Approval dataset into a Pandas DataFrame.
 
 ### 3. Explored the Dataset
 
@@ -47,48 +47,25 @@ Performed basic data exploration using:
 - `describe()`
 - `isnull().sum()`
 
----
-
 ### 4. Data Cleaning
 
-- Checked missing values.
-- Filled missing values using appropriate methods.
-- Verified that no missing values remained.
+- Checked for missing values.
+- Handled missing values.
+- Verified that the dataset contains no missing values.
 
----
-
-### 5. Data Preprocessing
-
-Performed One-Hot Encoding using `pd.get_dummies()` for categorical features.
-
-Encoded columns include:
-
-- Gender
-- Married
-- Dependents
-- Education
-- Self_Employed
-- Property_Area
-
-The target variable (`Loan_Status`) was also converted into numerical values.
-
----
-
-### 6. Feature Selection
+### 5. Feature Selection
 
 Separated the dataset into:
 
 - **Features (X)**
 - **Target Variable (y)**
 
----
-
-### 7. Train-Test Split
+### 6. Train-Test Split
 
 Split the dataset into:
 
-- 80% Training Data
-- 20% Testing Data
+- **80% Training Data**
+- **20% Testing Data**
 
 Output:
 
@@ -106,23 +83,23 @@ y_test  : (123,)
 
 Completed:
 
-- Data Loading
-- Data Exploration
-- Data Cleaning
-- Data Preprocessing
-- One-Hot Encoding
+- Import Libraries
+- Load Dataset
+- Explore Dataset
+- Handle Missing Values
 - Feature Selection
 - Train-Test Split
 
-Next Steps:
+Upcoming Steps:
 
+- Encode Categorical Variables (if required)
 - Feature Scaling
-- Train SVM Model
+- Train Support Vector Machine (SVM)
 - Model Evaluation
 - Confusion Matrix
 - Classification Report
-- Save Model using Joblib
-- Build Streamlit Web App
+- Save the Model
+- Build a Streamlit Web Application
 
 ---
 
