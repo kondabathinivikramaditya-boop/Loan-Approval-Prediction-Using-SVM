@@ -1,126 +1,212 @@
-# Loan Approval Prediction Using Support Vector Machine (SVM)
+# 🏦 Loan Approval Prediction Using Support Vector Machine (SVM)
 
-## Project Overview
-
-This project aims to predict whether a loan application will be approved using a Support Vector Machine (SVM).
-
-The project is currently in the data preprocessing stage. The dataset has been loaded, explored, cleaned, and prepared for model training.
+A Machine Learning project that predicts whether a loan application is likely to be **Approved** or **Rejected** using the **Support Vector Machine (SVM)** algorithm. The project includes complete data preprocessing, model training, evaluation, and an interactive **Streamlit web application** for real-time loan prediction.
 
 ---
 
-## Dataset
+## 📌 Project Overview
 
-- Dataset: Loan Approval Prediction
-- Total Records: 614
-- Total Features: 13
-- Target Variable: Loan_Status
+Loan approval is an important decision-making process for financial institutions. This project uses historical loan application data to build a machine learning model that predicts loan approval status based on applicant details.
 
----
+The project covers the complete machine learning pipeline, including:
 
-## Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Jupyter Notebook
-
----
-
-## Project Workflow (Completed)
-
-### 1. Imported Required Libraries
-
-Imported all the required Python libraries for data analysis and machine learning.
-
-### 2. Loaded the Dataset
-
-Loaded the Loan Approval dataset into a Pandas DataFrame.
-
-### 3. Explored the Dataset
-
-Performed basic data exploration using:
-
-- `head()`
-- `shape`
-- `info()`
-- `describe()`
-- `isnull().sum()`
-
-### 4. Data Cleaning
-
-- Checked for missing values.
-- Handled missing values.
-- Verified that the dataset contains no missing values.
-
-### 5. Feature Selection
-
-Separated the dataset into:
-
-- **Features (X)**
-- **Target Variable (y)**
-
-### 6. Train-Test Split
-
-Split the dataset into:
-
-- **80% Training Data**
-- **20% Testing Data**
-
-Output:
-
-```
-X_train : (491, 14)
-X_test  : (123, 14)
-
-y_train : (491,)
-y_test  : (123,)
-```
-
----
-
-## Current Project Status
-
-Completed:
-
-- Import Libraries
-- Load Dataset
-- Explore Dataset
-- Handle Missing Values
-- Feature Selection
-- Train-Test Split
-
-Upcoming Steps:
-
-- Encode Categorical Variables (if required)
+- Data Cleaning
+- Missing Value Handling
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
 - Feature Scaling
-- Train Support Vector Machine (SVM)
+- Model Training using Support Vector Machine (SVM)
+- Hyperparameter Tuning using GridSearchCV
 - Model Evaluation
-- Confusion Matrix
-- Classification Report
-- Save the Model
-- Build a Streamlit Web Application
+- Model Deployment using Streamlit
 
 ---
 
-## Repository Structure
+## 🚀 Features
+
+- 📊 Complete Data Preprocessing
+- 🧹 Missing Value Imputation
+- 🔄 One-Hot Encoding for Categorical Features
+- 📈 Feature Scaling using StandardScaler
+- 🤖 Loan Prediction using Support Vector Machine (SVM)
+- 🎯 Hyperparameter Tuning with GridSearchCV
+- 📉 Model Evaluation using Accuracy, Confusion Matrix and Classification Report
+- 🌐 Interactive Streamlit Web Application
+- 💾 Saved Model using Joblib
+
+---
+
+## 📂 Project Structure
 
 ```
 Loan-Approval-Prediction-Using-SVM/
 │
 ├── dataset/
-│   └── Loan_approval.csv
+│   └── Loan_Approval.csv
 │
 ├── loan_prediction_svm.ipynb
-│
-└── README.md
+├── app.py
+├── loan_approval_svm_model.pkl
+├── scaler.pkl
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## Author
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- Joblib
+- Matplotlib
+- Seaborn
+
+---
+
+## 📊 Machine Learning Workflow
+
+### 1. Data Collection
+
+- Loan Approval Dataset
+
+### 2. Data Preprocessing
+
+- Missing Value Imputation
+- Duplicate Removal
+- Feature Selection
+- One-Hot Encoding
+- Feature Scaling
+
+### 3. Train-Test Split
+
+- 80% Training Data
+- 20% Testing Data
+
+### 4. Model Building
+
+- Support Vector Machine (SVM)
+
+### 5. Hyperparameter Tuning
+
+- GridSearchCV
+
+### 6. Model Evaluation
+
+- Accuracy Score
+- Confusion Matrix
+- Classification Report
+
+### 7. Deployment
+
+- Streamlit Web Application
+
+---
+
+## 📈 Model Performance
+
+| Metric | Value |
+|---------|-------|
+| Algorithm | Support Vector Machine (SVM) |
+| Accuracy | **85%** |
+| Hyperparameter Tuning | GridSearchCV |
+| Feature Scaling | StandardScaler |
+
+---
+
+## 📸 Streamlit Application
+
+The Streamlit application allows users to enter applicant details and instantly predict whether the loan is likely to be approved or rejected.
+
+### Input Features
+
+- Applicant Income
+- Co-applicant Income
+- Loan Amount
+- Loan Amount Term
+- Credit History
+- Gender
+- Marital Status
+- Dependents
+- Education
+- Self Employed
+- Property Area
+
+### Output
+
+- ✅ Loan Approved
+- ❌ Loan Rejected
+
+---
+
+## ▶️ How to Run the Project
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/kondabathinivikramaditya-boop/Loan-Approval-Prediction-Using-SVM.git
+```
+
+### Navigate to Project
+
+```bash
+cd Loan-Approval-Prediction-Using-SVM
+```
+
+### Install Required Libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+---
+
+## 📦 Required Libraries
+
+```
+streamlit
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+seaborn
+```
+
+---
+
+## 📚 Learning Outcomes
+
+Through this project, I gained practical experience in:
+
+- Data Preprocessing
+- Feature Engineering
+- Machine Learning Pipeline
+- Support Vector Machine (SVM)
+- Hyperparameter Tuning
+- Model Evaluation
+- Model Serialization using Joblib
+- Streamlit Deployment
+- Git & GitHub Version Control
+
+## 👨‍💻 Author
 
 **Vikramaditya Kondabathini**
 
-GitHub:
-https://github.com/kondabathinivikramaditya-boop
+B.Tech CSE (Data Science)
+
+St. Peters Engineering College
+
+
+## 📜 License
+
+This project is created for educational and learning purposes.
